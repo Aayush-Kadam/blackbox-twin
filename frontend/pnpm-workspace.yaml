@@ -1,0 +1,4 @@
+# Flat package layout works on filesystems where directory links are unavailable.
+nodeLinker: hoisted
+packageImportMethod: copy
+storeDir: .pnpm-store

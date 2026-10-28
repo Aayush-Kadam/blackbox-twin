@@ -1,0 +1,666 @@
+{
+  "schema_version": 1,
+  "counterexample_id": "3c84269c-fd80-43de-99b7-e95b803e9d41",
+  "target_id": "delayed-commit",
+  "target_version": "1",
+  "model_id": "693910cfe0460b7f616f094f19af7e0ac2c3cdd86ac1183bb3ddaa81716e0522",
+  "created_at": "2026-10-26T20:58:22.524245+00:00",
+  "strategy": "random",
+  "seed": 7,
+  "minimization": {
+    "schema_version": 1,
+    "status": "completed",
+    "original": {
+      "schema_version": 1,
+      "actions": [
+        "idle",
+        "commit",
+        "advance",
+        "advance",
+        "advance",
+        "idle",
+        "advance",
+        "commit",
+        "commit",
+        "advance"
+      ],
+      "status": "output_disagreement",
+      "first_divergence": 7,
+      "divergent_paths": [
+        "/result"
+      ],
+      "original": [
+        {
+          "payload": {
+            "ok": true
+          }
+        },
+        {
+          "payload": {
+            "result": "denied"
+          }
+        },
+        {
+          "payload": {
+            "ok": true
+          }
+        },
+        {
+          "payload": {
+            "ok": true
+          }
+        },
+        {
+          "payload": {
+            "ok": true
+          }
+        },
+        {
+          "payload": {
+            "ok": true
+          }
+        },
+        {
+          "payload": {
+            "ok": true
+          }
+        },
+        {
+          "payload": {
+            "result": "accepted"
+          }
+        },
+        {
+          "payload": {
+            "result": "denied"
+          }
+        },
+        {
+          "payload": {
+            "ok": true
+          }
+        }
+      ],
+      "twin": [
+        {
+          "payload": {
+            "ok": true
+          }
+        },
+        {
+          "payload": {
+            "result": "denied"
+          }
+        },
+        {
+          "payload": {
+            "ok": true
+          }
+        },
+        {
+          "payload": {
+            "ok": true
+          }
+        },
+        {
+          "payload": {
+            "ok": true
+          }
+        },
+        {
+          "payload": {
+            "ok": true
+          }
+        },
+        {
+          "payload": {
+            "ok": true
+          }
+        },
+        {
+          "payload": {
+            "result": "denied"
+          }
+        },
+        {
+          "payload": {
+            "result": "denied"
+          }
+        },
+        {
+          "payload": {
+            "ok": true
+          }
+        }
+      ],
+      "raw_original": [
+        {
+          "ok": true
+        },
+        {
+          "result": "denied"
+        },
+        {
+          "ok": true
+        },
+        {
+          "ok": true
+        },
+        {
+          "ok": true
+        },
+        {
+          "ok": true
+        },
+        {
+          "ok": true
+        },
+        {
+          "result": "accepted"
+        },
+        {
+          "result": "denied"
+        },
+        {
+          "ok": true
+        }
+      ],
+      "raw_twin": [
+        {
+          "ok": true
+        },
+        {
+          "result": "denied"
+        },
+        {
+          "ok": true
+        },
+        {
+          "ok": true
+        },
+        {
+          "ok": true
+        },
+        {
+          "ok": true
+        },
+        {
+          "ok": true
+        },
+        {
+          "result": "denied"
+        },
+        {
+          "result": "denied"
+        },
+        {
+          "ok": true
+        }
+      ],
+      "failure_side": null,
+      "failure_stage": null,
+      "detail": null,
+      "normalization": "identity-json-v1"
+    },
+    "minimized": {
+      "schema_version": 1,
+      "actions": [
+        "advance",
+        "advance",
+        "advance",
+        "advance",
+        "commit"
+      ],
+      "status": "output_disagreement",
+      "first_divergence": 4,
+      "divergent_paths": [
+        "/result"
+      ],
+      "original": [
+        {
+          "payload": {
+            "ok": true
+          }
+        },
+        {
+          "payload": {
+            "ok": true
+          }
+        },
+        {
+          "payload": {
+            "ok": true
+          }
+        },
+        {
+          "payload": {
+            "ok": true
+          }
+        },
+        {
+          "payload": {
+            "result": "accepted"
+          }
+        }
+      ],
+      "twin": [
+        {
+          "payload": {
+            "ok": true
+          }
+        },
+        {
+          "payload": {
+            "ok": true
+          }
+        },
+        {
+          "payload": {
+            "ok": true
+          }
+        },
+        {
+          "payload": {
+            "ok": true
+          }
+        },
+        {
+          "payload": {
+            "result": "denied"
+          }
+        }
+      ],
+      "raw_original": [
+        {
+          "ok": true
+        },
+        {
+          "ok": true
+        },
+        {
+          "ok": true
+        },
+        {
+          "ok": true
+        },
+        {
+          "result": "accepted"
+        }
+      ],
+      "raw_twin": [
+        {
+          "ok": true
+        },
+        {
+          "ok": true
+        },
+        {
+          "ok": true
+        },
+        {
+          "ok": true
+        },
+        {
+          "result": "denied"
+        }
+      ],
+      "failure_side": null,
+      "failure_stage": null,
+      "detail": null,
+      "normalization": "identity-json-v1"
+    },
+    "attempts": 32,
+    "attempts_evidence": [
+      {
+        "actions": [
+          "idle",
+          "commit",
+          "advance",
+          "advance",
+          "advance",
+          "idle",
+          "advance",
+          "commit",
+          "commit",
+          "advance"
+        ],
+        "status": "output_disagreement"
+      },
+      {
+        "actions": [
+          "idle",
+          "advance",
+          "commit",
+          "commit",
+          "advance"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "idle",
+          "commit",
+          "advance",
+          "advance",
+          "advance"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "idle",
+          "advance",
+          "commit",
+          "commit",
+          "advance"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "idle",
+          "commit",
+          "advance",
+          "advance",
+          "commit",
+          "commit",
+          "advance"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "idle",
+          "commit",
+          "advance",
+          "advance",
+          "advance",
+          "idle",
+          "advance"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "idle",
+          "commit",
+          "advance",
+          "advance",
+          "advance",
+          "idle",
+          "advance",
+          "commit",
+          "commit"
+        ],
+        "status": "output_disagreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "idle",
+          "advance",
+          "commit",
+          "commit"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "idle",
+          "commit",
+          "advance",
+          "advance",
+          "commit",
+          "commit"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "idle",
+          "commit",
+          "advance",
+          "advance",
+          "advance",
+          "idle"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "advance",
+          "idle",
+          "advance",
+          "commit",
+          "commit"
+        ],
+        "status": "output_disagreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "idle",
+          "advance",
+          "commit",
+          "commit"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "advance",
+          "commit",
+          "commit"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "advance",
+          "idle",
+          "commit"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "advance",
+          "idle",
+          "advance",
+          "commit"
+        ],
+        "status": "output_disagreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "idle",
+          "advance",
+          "commit"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "advance",
+          "commit"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "advance",
+          "idle"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "idle",
+          "advance",
+          "commit"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "idle",
+          "advance",
+          "commit"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "idle",
+          "advance",
+          "commit"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "advance",
+          "advance",
+          "commit"
+        ],
+        "status": "output_disagreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "advance",
+          "commit"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "advance",
+          "commit"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "advance",
+          "commit"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "advance",
+          "commit"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "advance",
+          "advance"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "advance",
+          "commit"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "advance",
+          "commit"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "advance",
+          "commit"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "advance",
+          "commit"
+        ],
+        "status": "agreement"
+      },
+      {
+        "actions": [
+          "advance",
+          "advance",
+          "advance",
+          "advance"
+        ],
+        "status": "agreement"
+      }
+    ],
+    "locally_minimal": true,
+    "physical_actions": 168
+  },
+  "query_costs": {
+    "original_cumulative": {
+      "actions": 228,
+      "resets": 51,
+      "sequences": 51,
+      "oracle_seconds": 0.20499999995809048
+    },
+    "twin_cumulative": {
+      "actions": 202,
+      "resets": 39,
+      "sequences": 39,
+      "oracle_seconds": 0.12599999993108213
+    }
+  },
+  "status": "confirmed",
+  "comparison_policy": "identity-json-v1",
+  "replay_metadata": {
+    "reset": "protocol",
+    "fresh_reset_per_candidate": true
+  }
+}

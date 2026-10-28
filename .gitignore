@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+runs/
+dist/
+build/
+work/
+# Local release-review ledgers and raw operational logs are retained, not published.
+evidence/m81/
+evidence/m8*/
+evidence/m7-verification/
+evidence/m6-recovery/
+evidence/m6-verification/
+evidence/m6-clean-reproduction/
+evidence/m5-reproduction/
+evidence/m5-1-reproduction/
+evidence/**/*.txt
+evidence/**/*.prof

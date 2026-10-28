@@ -1,0 +1,329 @@
+{
+  "schema_version": 1,
+  "protocol_id": "M6-confirmatory-v1",
+  "frozen_at": "2026-10-27T15:05:14.178222+00:00",
+  "label": "CONFIRMATORY",
+  "source_sha256": {
+    "benchmark.py": "e03413fe229218f6b13bd780ea705ceda07cd6d49bb7bb69d921ac110feaa9a3",
+    "benchmark_audit.py": "2d7fc5762f9e8aab358776edef7e6f1db041c8c0bb25df830286f54090521eab",
+    "benchmark_summary.py": "26a2c5dd9536056b2227b129a777cfb49ebffbd87bbf849a0446694fbf9d4450",
+    "benchmark_targets.py": "6d926a556728c66a0c565b2e72f5288660370b576b391b3d295bebcb5e86f786",
+    "cli.py": "32acc1f9cd67ee8255663fc222c2e0b8deaba9b5ecb61006210d903e66c745d5",
+    "contracts.py": "1a44c069ddff6e1354f30eee5575a95cb2203fc57298f61199f57fb29a872c90",
+    "counterexamples.py": "ce9782e3150a3e8e4675b3ba886988801f551c91dc3b3d1d42c0103d2166e113",
+    "defaults.py": "a67685c8de17b937bd96c1d1454b474a4ae27ffb39af3d2540d7d2c5ee0dfa6b",
+    "differential.py": "96cc92a27b2296aff8d7e3af4030ad16dc9e14ee57b928ffd78e13a6d15dbf2d",
+    "evaluation.py": "a99f019ab3fc6d8f42fb8289fe7373e3f33d85662ec0c04f3dfe0524f5a6a470",
+    "experiments.py": "487ba12f105012f4b83d512cb5d2ce26202343491f175a94043f39e11f8a7b4d",
+    "guards.py": "e73e0c7045aaf4cff8c1387f457eac470ab2a4cd797d4e7eb5dfaed88f3c0598",
+    "learning.py": "656ce5fa6d40ce348b8071dc8089098028931745beed98c34b4296410e5af64f",
+    "m3_cli.py": "01172a963a8ad7482b53ac36e49c545c28c6cf7001c591a69dd8033ad00f304a",
+    "m3_evaluation.py": "bcb66d59361369b93e26d4e2376cc205649bfb49ea0f31f0009425aa93066b78",
+    "m5.py": "68089e4a5fc60795d301b4d08f7c030a9e8e1219977a70b1c8c17f40977d6d22",
+    "m51.py": "dc90b46771eae030b51a5a6e377d72cf440afb1be0e52fd12bcfa91ef92f759e",
+    "m6_run.py": "a2aff46fcdd8a1e3fd2a3020cb7be729ba06d6b5f3ab22a6400393b9bd7e4944",
+    "m6_targets.py": "b7953b70ba97727bbaf9465429995db11e93cc02bc8343f3b8b1f20427cd1a7f",
+    "m6_train.py": "6e1eb18ff02aebd03bc606d40fa64ffb972a599e26436241307ed4671b3973cd",
+    "oracle.py": "1d435154c51cb3dbe7b9912ad724b8665154d4147a43765b1a043c5304c0c0f6",
+    "planner_diagnostics.py": "245094b46ff2cdaf343759cd6e7b0d43a416049990eedf29378c4032732c1fbf",
+    "planner_oracles.py": "9eb8b20e3b41589600f3f503ae9f115b4ec70ba4fac74a55b0892c1961844cdf",
+    "planning.py": "e5bca776b726987ba20857778556addb86fd7bec965f54ee762b71f579ec00b5",
+    "refinement.py": "16f7ae320c8865cfaf48654a74a55edce5b4ae1295ba8805f2480b1551cb69d2",
+    "storage.py": "7719c5d69ae16584c2ae1a7e477d71d669be608c60f811a42a5d5442dc91b0d9",
+    "support.py": "7beb47488d3bed2050ee1007ece0d8f55fb56f0beea54babdfe1a0740d149825",
+    "support_runtime.py": "181a042786855cdb9e25266697ccaa2285fa06971c74ae4e7d439f91c6e76bc9",
+    "synthesis.py": "914ce8a0e6b112071eb55205ed279804ac02487a576a074817f079f653eace42",
+    "typed.py": "7414f246f989a775ef21ad022e1519ce29df67d7142fdd2b16fd7e93afb4e305",
+    "typed_learning.py": "07f3fb4e1c8365bce08d8abed8188dbc603c5446ab08f78e49a7910d55625ca6",
+    "typed_runtime.py": "b22331e249be9967c19d0341745343cbb0dc0fb954e8e5881840ace999594419",
+    "__init__.py": "4494f502f9f95a88835959992bca0cf1e5ea1da0500ba561783fb13d0ad6a649"
+  },
+  "resources_sha256": {
+    "fixtures/targets/typed_wallet_process.py": "e55b7ff4990b60782dc1c4d686cc2cc75ebe578ddd9e4290bcd4018409238528",
+    "examples/typed_wallet/contract.json": "d71f914b383a92c02bf5f09916a748de7c4c7de3d929f0bd370d6aa43ad8ec0d",
+    "evidence/m4-1/target-rare-access/oracle.py": "3ebbd2b161fbcf9936aba40822a357c058bc918d082411405bf61c8fa2ba79cb"
+  },
+  "targets": [
+    {
+      "id": "A-easy-0",
+      "track": "A",
+      "family": "easy",
+      "variant": 0,
+      "target_seed": 81797
+    },
+    {
+      "id": "A-easy-1",
+      "track": "A",
+      "family": "easy",
+      "variant": 1,
+      "target_seed": 86434
+    },
+    {
+      "id": "A-easy-2",
+      "track": "A",
+      "family": "easy",
+      "variant": 2,
+      "target_seed": 82534
+    },
+    {
+      "id": "A-medium-0",
+      "track": "A",
+      "family": "medium",
+      "variant": 0,
+      "target_seed": 85296
+    },
+    {
+      "id": "A-medium-1",
+      "track": "A",
+      "family": "medium",
+      "variant": 1,
+      "target_seed": 89178
+    },
+    {
+      "id": "A-medium-2",
+      "track": "A",
+      "family": "medium",
+      "variant": 2,
+      "target_seed": 81675
+    },
+    {
+      "id": "A-delayed-0",
+      "track": "A",
+      "family": "delayed",
+      "variant": 0,
+      "target_seed": 82096
+    },
+    {
+      "id": "A-delayed-1",
+      "track": "A",
+      "family": "delayed",
+      "variant": 1,
+      "target_seed": 82692
+    },
+    {
+      "id": "A-delayed-2",
+      "track": "A",
+      "family": "delayed",
+      "variant": 2,
+      "target_seed": 80492
+    },
+    {
+      "id": "A-rare-0",
+      "track": "A",
+      "family": "rare",
+      "variant": 0,
+      "target_seed": 88098
+    },
+    {
+      "id": "A-rare-1",
+      "track": "A",
+      "family": "rare",
+      "variant": 1,
+      "target_seed": 81161
+    },
+    {
+      "id": "A-rare-2",
+      "track": "A",
+      "family": "rare",
+      "variant": 2,
+      "target_seed": 89627
+    },
+    {
+      "id": "B-wallet-0",
+      "track": "B",
+      "family": "wallet",
+      "variant": 0,
+      "target_seed": null,
+      "parameters": {
+        "cap": 1,
+        "limit": 4,
+        "minimum": 1,
+        "freeze_blocks": true,
+        "withdraw_keep": false
+      }
+    },
+    {
+      "id": "B-wallet-1",
+      "track": "B",
+      "family": "wallet",
+      "variant": 1,
+      "target_seed": null,
+      "parameters": {
+        "cap": 2,
+        "limit": 2,
+        "minimum": 1,
+        "freeze_blocks": true,
+        "withdraw_keep": false
+      }
+    },
+    {
+      "id": "B-wallet-2",
+      "track": "B",
+      "family": "wallet",
+      "variant": 2,
+      "target_seed": null,
+      "parameters": {
+        "cap": 2,
+        "limit": 4,
+        "minimum": 2,
+        "freeze_blocks": true,
+        "withdraw_keep": false
+      }
+    },
+    {
+      "id": "B-wallet-3",
+      "track": "B",
+      "family": "wallet",
+      "variant": 3,
+      "target_seed": null,
+      "parameters": {
+        "cap": 3,
+        "limit": 1,
+        "minimum": 1,
+        "freeze_blocks": false,
+        "withdraw_keep": false
+      }
+    },
+    {
+      "id": "B-wallet-4",
+      "track": "B",
+      "family": "wallet",
+      "variant": 4,
+      "target_seed": null,
+      "parameters": {
+        "cap": 3,
+        "limit": 4,
+        "minimum": 2,
+        "freeze_blocks": true,
+        "withdraw_keep": false
+      }
+    },
+    {
+      "id": "B-wallet-5",
+      "track": "B",
+      "family": "wallet",
+      "variant": 5,
+      "target_seed": null,
+      "parameters": {
+        "cap": 4,
+        "limit": 4,
+        "minimum": 1,
+        "freeze_blocks": true,
+        "withdraw_keep": true
+      }
+    },
+    {
+      "id": "C-inventory-0",
+      "track": "C",
+      "family": "inventory",
+      "variant": 0,
+      "target_seed": null,
+      "parameters": {
+        "cap": 2,
+        "limit": 1
+      }
+    },
+    {
+      "id": "C-inventory-1",
+      "track": "C",
+      "family": "inventory",
+      "variant": 1,
+      "target_seed": null,
+      "parameters": {
+        "cap": 3,
+        "limit": 2
+      }
+    },
+    {
+      "id": "C-inventory-2",
+      "track": "C",
+      "family": "inventory",
+      "variant": 2,
+      "target_seed": null,
+      "parameters": {
+        "cap": 4,
+        "limit": 3
+      }
+    }
+  ],
+  "learner_seeds": [
+    16221,
+    18204,
+    15789
+  ],
+  "training_seeds": [
+    28429,
+    29485,
+    29347
+  ],
+  "evaluation_seeds": [
+    98239,
+    98354,
+    96715,
+    96447,
+    104512,
+    104007,
+    99483,
+    102281,
+    97426,
+    98780,
+    99983,
+    100744,
+    103031,
+    95680,
+    96252,
+    102482,
+    98881,
+    101470,
+    104767,
+    101118,
+    103558
+  ],
+  "finite_seed_count": 3,
+  "typed_seed_count": 2,
+  "reserved_values": [
+    -7,
+    -5,
+    -3,
+    3,
+    6,
+    7
+  ],
+  "budgets": {
+    "A": [
+      250,
+      1000
+    ],
+    "B": [
+      1500,
+      3000
+    ],
+    "C": [
+      500,
+      1500
+    ]
+  },
+  "methods": {
+    "A": [
+      "aalpy-state-prefix",
+      "aalpy-random-w",
+      "random"
+    ],
+    "B": [
+      "fixed-grid",
+      "adaptive",
+      "hardened"
+    ],
+    "C": [
+      "fixed-grid",
+      "adaptive",
+      "hardened"
+    ]
+  },
+  "criterion": {
+    "trace_fidelity": 0.95,
+    "output_coverage": 0.95
+  },
+  "seed_scope": "target RNG for A; typed targets are fixed configurations, not random draws",
+  "statistical_scope": "target-level seed means, descriptive medians/ranges; no population CI"
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "families": ["random", "delayed", "workflow"],
+  "seeds": [11],
+  "methods": ["random", "bfs", "aalpy-random-w", "aalpy-state-prefix", "cost-aware", "no-cost", "no-coverage", "no-suffix"],
+  "budgets": [250, 500],
+  "max_resets": 3000,
+  "seconds_per_run": 120,
+  "pool_size": 64,
+  "max_length": 12,
+  "evaluation_seed_offset": 90000,
+  "evaluation_count": 20,
+  "evaluation_min_length": 24,
+  "evaluation_max_length": 32,
+  "workflow_source": "../../fixtures/targets/order_process.py",
+  "support_rule": "per family >=4/5 paired AULC wins and positive median against BOTH native baselines; all families supported, some partial, none unsupported; failures/incomplete inconclusive"
+}

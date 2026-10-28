@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "target_id": "delayed-commit",
+  "version": "1",
+  "executable": "../../fixtures/targets/delayed_process.py",
+  "authorization": "owned-local-fixture",
+  "reset": "protocol",
+  "actions": {
+    "advance": {"operation": "advance", "arguments": {}},
+    "commit": {"operation": "commit", "arguments": {}},
+    "idle": {"operation": "idle", "arguments": {}}
+  }
+}

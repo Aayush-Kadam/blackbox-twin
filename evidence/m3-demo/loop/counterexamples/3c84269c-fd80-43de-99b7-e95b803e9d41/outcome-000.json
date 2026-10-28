@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-26T20:58:29.600974+00:00",
+  "status": "resolved",
+  "new_model_id": "8b770ad7986ccff34b56738851b6def47cb3d59b59bae0d57476d8227793f03f",
+  "regressions": {
+    "checked": 35,
+    "passed": 35,
+    "previously_passing": 30,
+    "previously_passing_preserved": 30,
+    "new_regressions": 0,
+    "failures": []
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "initial_state": "S0",
+  "actions": {
+    "advance": {
+      "operation": "advance",
+      "arguments": {}
+    },
+    "commit": {
+      "operation": "commit",
+      "arguments": {}
+    },
+    "idle": {
+      "operation": "idle",
+      "arguments": {}
+    }
+  },
+  "transitions": {
+    "S0": {
+      "advance": {
+        "next_state": "S0",
+        "output": {
+          "payload": {
+            "ok": true
+          }
+        }
+      },
+      "commit": {
+        "next_state": "S0",
+        "output": {
+          "payload": {
+            "result": "denied"
+          }
+        }
+      },
+      "idle": {
+        "next_state": "S0",
+        "output": {
+          "payload": {
+            "ok": true
+          }
+        }
+      }
+    }
+  },
+  "provenance": {
+    "run_id": "b1d440a7-68a6-4a2b-a95c-f7a7fa926428",
+    "parent_model_id": "693910cfe0460b7f616f094f19af7e0ac2c3cdd86ac1183bb3ddaa81716e0522",
+    "counterexamples": [
+      "3c84269c-fd80-43de-99b7-e95b803e9d41"
+    ],
+    "algorithm": "AALpy L*",
+    "eq_oracle": "RandomWMethodEqOracle",
+    "seed": 7,
+    "revision": 1,
+    "equivalence_proven": false
+  },
+  "unsupported": "All concrete actions outside the enumerated alphabet"
+}

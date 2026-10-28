@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "revision": 1,
+  "model_id": "8b770ad7986ccff34b56738851b6def47cb3d59b59bae0d57476d8227793f03f",
+  "parent_model_id": "693910cfe0460b7f616f094f19af7e0ac2c3cdd86ac1183bb3ddaa81716e0522",
+  "states": 5,
+  "model": "revisions/001/model.json",
+  "twin": "revisions/001/twin.py",
+  "learning_statistics": {
+    "learning_rounds": 2,
+    "automaton_size": 5,
+    "queries_learning": 52,
+    "steps_learning": 330,
+    "queries_eq_oracle": 50,
+    "steps_eq_oracle": 456,
+    "learning_time": 1.99,
+    "eq_oracle_time": 2.62,
+    "total_time": 4.61,
+    "characterization_set": [
+      [
+        "advance"
+      ],
+      [
+        "commit"
+      ],
+      [
+        "idle"
+      ],
+      [
+        "advance",
+        "advance",
+        "idle",
+        "advance",
+        "commit"
+      ],
+      [
+        "advance",
+        "idle",
+        "advance",
+        "commit"
+      ],
+      [
+        "idle",
+        "advance",
+        "commit"
+      ]
+    ],
+    "cache_saved": 59,
+    "confirmed_counterexamples_returned": [
+      [
+        "idle",
+        "commit",
+        "advance",
+        "advance",
+        "advance",
+        "idle",
+        "advance",
+        "commit"
+      ]
+    ]
+  },
+  "counterexamples": [
+    "3c84269c-fd80-43de-99b7-e95b803e9d41"
+  ],
+  "created_at": "2026-10-26T20:58:27.161928+00:00",
+  "model_file_sha256": "817b021cd7500a5c4121d81fd35b16b16257768248bdc8c10c1092c9f45194fb",
+  "twin_file_sha256": "e92ef911eb621e11460af20c2860eec553b57359227eead671ff4df55af7a284"
+}

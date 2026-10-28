@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "contract_id": "bbt-typed-wallet-v1",
+  "development": {"dev": {"cap": 4, "limit": 2}},
+  "evaluation": {"eval-a": {"cap": 4, "limit": 3}, "eval-b": {"cap": 3, "limit": 2}},
+  "learner_access": "launcher/evaluator only; configuration never passed to learner"
+}

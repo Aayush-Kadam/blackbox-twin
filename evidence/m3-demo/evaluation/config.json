@@ -1,0 +1,35 @@
+{
+  "target": {
+    "schema_version": 1,
+    "target_id": "delayed-commit",
+    "version": "1",
+    "executable": "../../fixtures/targets/delayed_process.py",
+    "authorization": "owned-local-fixture",
+    "reset": "protocol",
+    "actions": {
+      "advance": {
+        "operation": "advance",
+        "arguments": {}
+      },
+      "commit": {
+        "operation": "commit",
+        "arguments": {}
+      },
+      "idle": {
+        "operation": "idle",
+        "arguments": {}
+      }
+    }
+  },
+  "initial_model_id": "693910cfe0460b7f616f094f19af7e0ac2c3cdd86ac1183bb3ddaa81716e0522",
+  "refined_model_id": "8b770ad7986ccff34b56738851b6def47cb3d59b59bae0d57476d8227793f03f",
+  "budget": {
+    "max_actions": 6000,
+    "max_resets": 1000,
+    "max_sequence_length": 100,
+    "query_timeout_seconds": 2.0,
+    "total_seconds": 300.0
+  },
+  "seed": 20261027,
+  "full_sequence_training_overlap": 0
+}

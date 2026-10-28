@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "contract_id": "bbt-typed-wallet-v1",
+  "amount_domain": [-8, 8],
+  "balance_domain": [0, 4],
+  "initial_observable_state": {"balance": 0, "frozen": false},
+  "max_sequence_length": 40,
+  "operations": {
+    "deposit": {"amount": {"kind": "integer", "minimum": -8, "maximum": 8}},
+    "withdraw": {"amount": {"kind": "integer", "minimum": -8, "maximum": 8}},
+    "get_balance": {},
+    "freeze": {},
+    "unfreeze": {}
+  },
+  "fixed_grid": [-8, -1, 0, 1, 8],
+  "reserved_evaluation_values": [-7, -5, -3, 2, 6, 7],
+  "training_budget": {"max_actions": 5000, "max_resets": 1000, "total_seconds": 120},
+  "reset": {"request": {"control": "reset"}, "response": {"control": "reset", "ok": true}},
+  "output": {"status": ["ok", "error"], "balance": "integer", "frozen": "boolean", "error": "optional string on error"},
+  "public_validation_errors": ["unknown_operation", "invalid_arguments", "out_of_domain"],
+  "assumptions": ["deterministic", "resettable", "local owned fixture", "observable state sufficiency is a checked hypothesis"],
+  "evaluation": {"sequence_seed": 510051, "sequences": 60, "length": [4, 10]},
+  "development_variant": "dev",
+  "evaluation_variants": ["eval-a", "eval-b"]
+}

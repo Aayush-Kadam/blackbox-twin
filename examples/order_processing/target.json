@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "target_id": "order-processing-finite",
+  "version": "1",
+  "executable": "../../fixtures/targets/order_process.py",
+  "authorization": "owned-local-fixture",
+  "reset": "protocol",
+  "actions": {
+    "create": {"operation": "create", "arguments": {}},
+    "authorize": {"operation": "authorize", "arguments": {}},
+    "capture": {"operation": "capture", "arguments": {}},
+    "refund": {"operation": "refund", "arguments": {}},
+    "cancel": {"operation": "cancel", "arguments": {}},
+    "status": {"operation": "status", "arguments": {}}
+  }
+}

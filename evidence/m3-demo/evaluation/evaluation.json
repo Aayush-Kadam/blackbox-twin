@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "status": "completed",
+  "scores": {
+    "initial": {
+      "traces": 100,
+      "trace_matches": 73,
+      "steps": 1996,
+      "step_matches": 1967,
+      "error_steps": 0,
+      "error_matches": 0,
+      "unsupported_traces": 0,
+      "trace_match_rate": 0.73,
+      "step_match_rate": 0.9854709418837675
+    },
+    "refined": {
+      "traces": 100,
+      "trace_matches": 100,
+      "steps": 1996,
+      "step_matches": 1996,
+      "error_steps": 0,
+      "error_matches": 0,
+      "unsupported_traces": 0,
+      "trace_match_rate": 1.0,
+      "step_match_rate": 1.0
+    }
+  },
+  "original_costs": {
+    "actions": 3992,
+    "resets": 200,
+    "sequences": 200,
+    "oracle_seconds": 1.1449999997857958
+  },
+  "twin_costs": {
+    "actions": 3992,
+    "resets": 200,
+    "sequences": 200,
+    "oracle_seconds": 1.09699999995064
+  },
+  "phase_costs": {
+    "held-out/initial": {
+      "actions": 1996,
+      "resets": 100,
+      "oracle_seconds": 0.6269999999785796
+    },
+    "held-out/refined": {
+      "actions": 1996,
+      "resets": 100,
+      "oracle_seconds": 0.5179999998072162
+    },
+    "twin:held-out/initial": {
+      "actions": 1996,
+      "resets": 100,
+      "oracle_seconds": 0.4229999999515712
+    },
+    "twin:held-out/refined": {
+      "actions": 1996,
+      "resets": 100,
+      "oracle_seconds": 0.6739999999990687
+    }
+  },
+  "wall_seconds": 37.625,
+  "equivalence_proven": false,
+  "full_sequence_training_overlap": 0
+}

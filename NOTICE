@@ -1,0 +1,14 @@
+BlackBox Twin
+Copyright 2026 Aayush Kadam
+
+Original project contributions are licensed under the Apache License, Version 2.0.
+Third-party material retains its own copyright notices and license terms.
+
+The production workbench includes React, react-dom and scheduler under the MIT
+license, Copyright (c) Meta Platforms, Inc. and affiliates. Complete upstream
+notices are bundled in blackbox_twin/workbench_assets/THIRD_PARTY_LICENSES.txt
+and app.js.LEGAL.txt. See THIRD_PARTY_NOTICES.md for dependency attribution,
+provenance, and the distinction between bundled and installed material.
+
+The automata-learning foundation uses AALpy; no new L* algorithm is claimed.
+Generated behavioral twins are hypotheses, not proof of universal equivalence.

@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "status": "no_counterexample_under_search_policy",
+  "revisions": [
+    {
+      "schema_version": 1,
+      "revision": 0,
+      "model_id": "693910cfe0460b7f616f094f19af7e0ac2c3cdd86ac1183bb3ddaa81716e0522",
+      "parent_model_id": null,
+      "states": 1,
+      "model": "revisions/000/model.json",
+      "twin": "revisions/000/twin.py",
+      "learning_statistics": {
+        "learning_rounds": 1,
+        "automaton_size": 1,
+        "queries_learning": 9,
+        "steps_learning": 18,
+        "queries_eq_oracle": 1,
+        "steps_eq_oracle": 2,
+        "learning_time": 0.17,
+        "eq_oracle_time": 0.03,
+        "total_time": 0.2,
+        "characterization_set": [
+          [
+            "advance"
+          ],
+          [
+            "commit"
+          ],
+          [
+            "idle"
+          ]
+        ],
+        "cache_saved": 3
+      },
+      "counterexamples": [],
+      "created_at": "2026-10-26T20:58:19.773871+00:00",
+      "model_file_sha256": "f7c5919926a5b1e905db002d6e8785bb6bfc56572f8cbf4712a2642d2edb5aee",
+      "twin_file_sha256": "17577f6c30b79a93230bfc0a5d06657e51d0668fbd553844b5c94012ec314fba"
+    },
+    {
+      "schema_version": 1,
+      "revision": 1,
+      "model_id": "8b770ad7986ccff34b56738851b6def47cb3d59b59bae0d57476d8227793f03f",
+      "parent_model_id": "693910cfe0460b7f616f094f19af7e0ac2c3cdd86ac1183bb3ddaa81716e0522",
+      "states": 5,
+      "model": "revisions/001/model.json",
+      "twin": "revisions/001/twin.py",
+      "learning_statistics": {
+        "learning_rounds": 2,
+        "automaton_size": 5,
+        "queries_learning": 52,
+        "steps_learning": 330,
+        "queries_eq_oracle": 50,
+        "steps_eq_oracle": 456,
+        "learning_time": 1.99,
+        "eq_oracle_time": 2.62,
+        "total_time": 4.61,
+        "characterization_set": [
+          [
+            "advance"
+          ],
+          [
+            "commit"
+          ],
+          [
+            "idle"
+          ],
+          [
+            "advance",
+            "advance",
+            "idle",
+            "advance",
+            "commit"
+          ],
+          [
+            "advance",
+            "idle",
+            "advance",
+            "commit"
+          ],
+          [
+            "idle",
+            "advance",
+            "commit"
+          ]
+        ],
+        "cache_saved": 59,
+        "confirmed_counterexamples_returned": [
+          [
+            "idle",
+            "commit",
+            "advance",
+            "advance",
+            "advance",
+            "idle",
+            "advance",
+            "commit"
+          ]
+        ]
+      },
+      "counterexamples": [
+        "3c84269c-fd80-43de-99b7-e95b803e9d41"
+      ],
+      "created_at": "2026-10-26T20:58:27.161928+00:00",
+      "model_file_sha256": "817b021cd7500a5c4121d81fd35b16b16257768248bdc8c10c1092c9f45194fb",
+      "twin_file_sha256": "e92ef911eb621e11460af20c2860eec553b57359227eead671ff4df55af7a284"
+    }
+  ],
+  "iterations": [
+    {
+      "iteration": 0,
+      "status": "resolved",
+      "counterexample_id": "3c84269c-fd80-43de-99b7-e95b803e9d41",
+      "original_actions": [
+        "idle",
+        "commit",
+        "advance",
+        "advance",
+        "advance",
+        "idle",
+        "advance",
+        "commit",
+        "commit",
+        "advance"
+      ],
+      "minimized_actions": [
+        "advance",
+        "advance",
+        "advance",
+        "advance",
+        "commit"
+      ],
+      "minimization_status": "completed",
+      "regressions": {
+        "checked": 35,
+        "passed": 35,
+        "previously_passing": 30,
+        "previously_passing_preserved": 30,
+        "new_regressions": 0,
+        "failures": []
+      },
+      "original_cost_delta": {
+        "actions": 1151,
+        "resets": 176
+      },
+      "phase_costs": {
+        "counterexample-minimization/0": {
+          "actions": 168,
+          "resets": 32,
+          "oracle_seconds": 0.03200000000651926
+        },
+        "differential-search/0": {
+          "actions": 34,
+          "resets": 7,
+          "oracle_seconds": 0.015999999945051968
+        },
+        "refinement-learning/0": {
+          "actions": 786,
+          "resets": 102,
+          "oracle_seconds": 0.22100000025238842
+        },
+        "regression-verification/0": {
+          "actions": 163,
+          "resets": 35,
+          "oracle_seconds": 0.015000000013969839
+        },
+        "twin:counterexample-minimization/0": {
+          "actions": 168,
+          "resets": 32,
+          "oracle_seconds": 0.03200000000651926
+        },
+        "twin:differential-search/0": {
+          "actions": 34,
+          "resets": 7,
+          "oracle_seconds": 0.09399999992456287
+        },
+        "twin:regression-verification/0": {
+          "actions": 163,
+          "resets": 35,
+          "oracle_seconds": 0.1559999999590218
+        }
+      },
+      "cumulative_original_costs": {
+        "actions": 1177,
+        "resets": 188
+      }
+    },
+    {
+      "iteration": 1,
+      "status": "no_counterexample",
+      "phase_costs": {
+        "differential-search/1": {
+          "actions": 678,
+          "resets": 100,
+          "oracle_seconds": 0.23599999980069697
+        },
+        "twin:differential-search/1": {
+          "actions": 678,
+          "resets": 100,
+          "oracle_seconds": 0.32899999991059303
+        }
+      },
+      "cumulative_original_costs": {
+        "actions": 1855,
+        "resets": 288
+      }
+    }
+  ],
+  "resolved_counterexamples": 1,
+  "equivalence_proven": false,
+  "original_costs": {
+    "actions": 1855,
+    "resets": 288,
+    "sequences": 288,
+    "oracle_seconds": 0.6770000000251457
+  },
+  "twin_costs": {
+    "actions": 1043,
+    "resets": 174,
+    "sequences": 174,
+    "oracle_seconds": 0.610999999800697
+  },
+  "phase_costs": {
+    "counterexample-minimization/0": {
+      "actions": 168,
+      "resets": 32,
+      "oracle_seconds": 0.03200000000651926
+    },
+    "differential-search/0": {
+      "actions": 34,
+      "resets": 7,
+      "oracle_seconds": 0.015999999945051968
+    },
+    "differential-search/1": {
+      "actions": 678,
+      "resets": 100,
+      "oracle_seconds": 0.23599999980069697
+    },
+    "initial-learning": {
+      "actions": 26,
+      "resets": 12,
+      "oracle_seconds": 0.15700000000651926
+    },
+    "refinement-learning/0": {
+      "actions": 786,
+      "resets": 102,
+      "oracle_seconds": 0.22100000025238842
+    },
+    "regression-verification/0": {
+      "actions": 163,
+      "resets": 35,
+      "oracle_seconds": 0.015000000013969839
+    },
+    "twin:counterexample-minimization/0": {
+      "actions": 168,
+      "resets": 32,
+      "oracle_seconds": 0.03200000000651926
+    },
+    "twin:differential-search/0": {
+      "actions": 34,
+      "resets": 7,
+      "oracle_seconds": 0.09399999992456287
+    },
+    "twin:differential-search/1": {
+      "actions": 678,
+      "resets": 100,
+      "oracle_seconds": 0.32899999991059303
+    },
+    "twin:regression-verification/0": {
+      "actions": 163,
+      "resets": 35,
+      "oracle_seconds": 0.1559999999590218
+    }
+  },
+  "wall_seconds": 18.64000000001397
+}

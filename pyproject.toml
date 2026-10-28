@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools==84.1.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blackbox-twin"
+version = "0.1.0.dev0"
+description = "Recorded black-box experiments and finite-state behavioral hypotheses"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE", "THIRD_PARTY_NOTICES.md"]
+dependencies = ["aalpy==2.0.0", "pydantic==2.14.1"]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1", "ruff==0.17.2"]
+workbench = ["fastapi==0.162.0", "starlette==1.10.0", "uvicorn==0.38.0"]
+workbench-test = ["httpx==0.28.1"]
+
+[project.scripts]
+bbt = "blackbox_twin.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+blackbox_twin = ["workbench_assets/*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]

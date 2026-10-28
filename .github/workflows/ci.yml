@@ -1,0 +1,52 @@
+name: core
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    timeout-minutes: 20
+    env:
+      BBT_REQUIRE_PHYSICAL_LINKS: "1"
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+        python: ["3.11", "3.12"]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e '.[dev,workbench,workbench-test]'
+      - run: python -m ruff check src tests fixtures scripts
+      - run: python -m ruff format --check src tests fixtures scripts
+      - run: python -m pytest -vv -o faulthandler_timeout=120
+      - run: python -m pip wheel --no-deps . --wheel-dir wheelhouse
+      - run: python scripts/ci_package_smoke.py
+  frontend:
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - uses: pnpm/action-setup@v4
+        with:
+          version: "11.25.0"
+      - run: pnpm install --frozen-lockfile --ignore-scripts
+      - run: pnpm test
+      - run: pnpm run build
+      - run: pnpm run format:check

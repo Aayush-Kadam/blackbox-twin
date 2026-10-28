@@ -1,0 +1,2558 @@
+{
+  "cells": 216,
+  "points": 324,
+  "training_actions": 214815,
+  "training_resets": 51022,
+  "status_counts": {
+    "action_budget": 98,
+    "completed": 94,
+    "model_class_unsupported": 24
+  },
+  "unreached_cells": 138,
+  "groups": [
+    {
+      "track": "A",
+      "family": "delayed",
+      "method": "aalpy-random-w",
+      "ceiling": 250,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.76,
+          "range": [
+            0.52,
+            0.8
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.9931475559616263,
+          "range": [
+            0.9851024208566108,
+            0.99529854254819
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 0.9931475559616263,
+          "range": [
+            0.9851024208566108,
+            0.99529854254819
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.006852444038373686,
+          "range": [
+            0.004701457451810061,
+            0.0148975791433892
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "delayed",
+      "method": "aalpy-random-w",
+      "ceiling": 1000,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.8,
+          "range": [
+            0.76,
+            1.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.99529854254819,
+          "range": [
+            0.9931475559616263,
+            1.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 0.99529854254819,
+          "range": [
+            0.9931475559616263,
+            1.0
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.004701457451810061,
+          "range": [
+            0.0,
+            0.006852444038373686
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "delayed",
+      "method": "aalpy-state-prefix",
+      "ceiling": 250,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.76,
+          "range": [
+            0.52,
+            0.8
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.9931475559616263,
+          "range": [
+            0.9851024208566108,
+            0.99529854254819
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 0.9931475559616263,
+          "range": [
+            0.9851024208566108,
+            0.99529854254819
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.006852444038373686,
+          "range": [
+            0.004701457451810061,
+            0.0148975791433892
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "delayed",
+      "method": "aalpy-state-prefix",
+      "ceiling": 1000,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.8,
+          "range": [
+            0.76,
+            0.84
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.9950341402855369,
+          "range": [
+            0.9931475559616263,
+            0.99529854254819
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 0.9950341402855369,
+          "range": [
+            0.9931475559616263,
+            0.99529854254819
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.004965859714463066,
+          "range": [
+            0.004701457451810061,
+            0.006852444038373686
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "delayed",
+      "method": "random",
+      "ceiling": 250,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.76,
+          "range": [
+            0.52,
+            0.8
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.9931475559616263,
+          "range": [
+            0.9851024208566108,
+            0.99529854254819
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 0.9931475559616263,
+          "range": [
+            0.9851024208566108,
+            0.99529854254819
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.006852444038373686,
+          "range": [
+            0.004701457451810061,
+            0.0148975791433892
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "delayed",
+      "method": "random",
+      "ceiling": 1000,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.76,
+          "range": [
+            0.68,
+            0.8
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.9931475559616263,
+          "range": [
+            0.9900682805710739,
+            0.99529854254819
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 0.9931475559616263,
+          "range": [
+            0.9900682805710739,
+            0.99529854254819
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.006852444038373686,
+          "range": [
+            0.004701457451810061,
+            0.009931719428926133
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "easy",
+      "method": "aalpy-random-w",
+      "ceiling": 250,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "easy",
+      "method": "aalpy-random-w",
+      "ceiling": 1000,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "easy",
+      "method": "aalpy-state-prefix",
+      "ceiling": 250,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "easy",
+      "method": "aalpy-state-prefix",
+      "ceiling": 1000,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "easy",
+      "method": "random",
+      "ceiling": 250,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "easy",
+      "method": "random",
+      "ceiling": 1000,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "medium",
+      "method": "aalpy-random-w",
+      "ceiling": 250,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": null,
+          "range": null
+        },
+        "false_supported_rate": {
+          "median_target_mean": null,
+          "range": null
+        },
+        "abstention_rate": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "medium",
+      "method": "aalpy-random-w",
+      "ceiling": 1000,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "medium",
+      "method": "aalpy-state-prefix",
+      "ceiling": 250,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": null,
+          "range": null
+        },
+        "false_supported_rate": {
+          "median_target_mean": null,
+          "range": null
+        },
+        "abstention_rate": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "medium",
+      "method": "aalpy-state-prefix",
+      "ceiling": 1000,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "medium",
+      "method": "random",
+      "ceiling": 250,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": null,
+          "range": null
+        },
+        "false_supported_rate": {
+          "median_target_mean": null,
+          "range": null
+        },
+        "abstention_rate": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "medium",
+      "method": "random",
+      "ceiling": 1000,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "rare",
+      "method": "aalpy-random-w",
+      "ceiling": 250,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.8,
+          "range": [
+            0.8,
+            0.8
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.995366079703429,
+          "range": [
+            0.9953445065176909,
+            0.99537251272559
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 0.995366079703429,
+          "range": [
+            0.9953445065176909,
+            0.99537251272559
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.004633920296570899,
+          "range": [
+            0.004627487274409995,
+            0.004655493482309125
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "rare",
+      "method": "aalpy-random-w",
+      "ceiling": 1000,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.8,
+          "range": [
+            0.8,
+            0.8
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.995366079703429,
+          "range": [
+            0.9953445065176909,
+            0.99537251272559
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 0.995366079703429,
+          "range": [
+            0.9953445065176909,
+            0.99537251272559
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.004633920296570899,
+          "range": [
+            0.004627487274409995,
+            0.004655493482309125
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "rare",
+      "method": "aalpy-state-prefix",
+      "ceiling": 250,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.8,
+          "range": [
+            0.8,
+            0.8
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.995366079703429,
+          "range": [
+            0.9953445065176909,
+            0.99537251272559
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 0.995366079703429,
+          "range": [
+            0.9953445065176909,
+            0.99537251272559
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.004633920296570899,
+          "range": [
+            0.004627487274409995,
+            0.004655493482309125
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "rare",
+      "method": "aalpy-state-prefix",
+      "ceiling": 1000,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.8,
+          "range": [
+            0.8,
+            0.8
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.995366079703429,
+          "range": [
+            0.9953445065176909,
+            0.99537251272559
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 0.995366079703429,
+          "range": [
+            0.9953445065176909,
+            0.99537251272559
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.004633920296570899,
+          "range": [
+            0.004627487274409995,
+            0.004655493482309125
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "rare",
+      "method": "random",
+      "ceiling": 250,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.8,
+          "range": [
+            0.8,
+            0.8
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.995366079703429,
+          "range": [
+            0.9953445065176909,
+            0.99537251272559
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 0.995366079703429,
+          "range": [
+            0.9953445065176909,
+            0.99537251272559
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.004633920296570899,
+          "range": [
+            0.004627487274409995,
+            0.004655493482309125
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "A",
+      "family": "rare",
+      "method": "random",
+      "ceiling": 1000,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.8,
+          "range": [
+            0.8,
+            0.8
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.995366079703429,
+          "range": [
+            0.9953445065176909,
+            0.99537251272559
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 0.995366079703429,
+          "range": [
+            0.9953445065176909,
+            0.99537251272559
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.004633920296570899,
+          "range": [
+            0.004627487274409995,
+            0.004655493482309125
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "B",
+      "family": "wallet",
+      "method": "adaptive",
+      "ceiling": 1500,
+      "distinct_targets": 6,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.9737762237762237,
+          "range": [
+            0.3233695652173913,
+            1.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.9106749007498898,
+          "range": [
+            0.5960495739736639,
+            1.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 0.9106749007498898,
+          "range": [
+            0.5960495739736639,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.08932509925011028,
+          "range": [
+            0.0,
+            0.4039504260263362
+          ]
+        }
+      }
+    },
+    {
+      "track": "B",
+      "family": "wallet",
+      "method": "adaptive",
+      "ceiling": 3000,
+      "distinct_targets": 6,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.9737762237762237,
+          "range": [
+            0.3233695652173913,
+            1.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.9106749007498898,
+          "range": [
+            0.5960495739736639,
+            1.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 0.9106749007498898,
+          "range": [
+            0.5960495739736639,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.08932509925011028,
+          "range": [
+            0.0,
+            0.4039504260263362
+          ]
+        }
+      }
+    },
+    {
+      "track": "B",
+      "family": "wallet",
+      "method": "fixed-grid",
+      "ceiling": 1500,
+      "distinct_targets": 6,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.8463341858482523,
+          "range": [
+            0.25271739130434784,
+            0.9377777777777778
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.7972616155401416,
+          "range": [
+            0.5658404337722696,
+            0.8903524385902456
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 0.872869639396352,
+          "range": [
+            0.7379979570990807,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 0.9571005917159763,
+          "range": [
+            0.5658404337722696,
+            1.0
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.042899408284023666,
+          "range": [
+            0.0,
+            0.43415956622773044
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.12713036060364796,
+          "range": [
+            0.0,
+            0.26200204290091933
+          ]
+        }
+      }
+    },
+    {
+      "track": "B",
+      "family": "wallet",
+      "method": "fixed-grid",
+      "ceiling": 3000,
+      "distinct_targets": 6,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.8463341858482523,
+          "range": [
+            0.25271739130434784,
+            0.9377777777777778
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.7972616155401416,
+          "range": [
+            0.5658404337722696,
+            0.8903524385902456
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 0.872869639396352,
+          "range": [
+            0.7379979570990807,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 0.9571005917159763,
+          "range": [
+            0.5658404337722696,
+            1.0
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.042899408284023666,
+          "range": [
+            0.0,
+            0.43415956622773044
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.12713036060364796,
+          "range": [
+            0.0,
+            0.26200204290091933
+          ]
+        }
+      }
+    },
+    {
+      "track": "B",
+      "family": "wallet",
+      "method": "hardened",
+      "ceiling": 1500,
+      "distinct_targets": 6,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.9297136287625418,
+          "range": [
+            0.28532608695652173,
+            1.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.8903443120237224,
+          "range": [
+            0.48140975987606505,
+            1.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 0.8903443120237224,
+          "range": [
+            0.48140975987606505,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.10965568797627766,
+          "range": [
+            0.0,
+            0.518590240123935
+          ]
+        }
+      }
+    },
+    {
+      "track": "B",
+      "family": "wallet",
+      "method": "hardened",
+      "ceiling": 3000,
+      "distinct_targets": 6,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.9297136287625418,
+          "range": [
+            0.28532608695652173,
+            1.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.8903443120237224,
+          "range": [
+            0.48140975987606505,
+            1.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 0.8903443120237224,
+          "range": [
+            0.48140975987606505,
+            1.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        },
+        "false_supported_rate": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "abstention_rate": {
+          "median_target_mean": 0.10965568797627766,
+          "range": [
+            0.0,
+            0.518590240123935
+          ]
+        }
+      }
+    },
+    {
+      "track": "C",
+      "family": "inventory",
+      "method": "adaptive",
+      "ceiling": 500,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": null,
+          "range": null
+        },
+        "false_supported_rate": {
+          "median_target_mean": null,
+          "range": null
+        },
+        "abstention_rate": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "C",
+      "family": "inventory",
+      "method": "adaptive",
+      "ceiling": 1500,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": null,
+          "range": null
+        },
+        "false_supported_rate": {
+          "median_target_mean": null,
+          "range": null
+        },
+        "abstention_rate": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "C",
+      "family": "inventory",
+      "method": "fixed-grid",
+      "ceiling": 500,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": null,
+          "range": null
+        },
+        "false_supported_rate": {
+          "median_target_mean": null,
+          "range": null
+        },
+        "abstention_rate": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "C",
+      "family": "inventory",
+      "method": "fixed-grid",
+      "ceiling": 1500,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": null,
+          "range": null
+        },
+        "false_supported_rate": {
+          "median_target_mean": null,
+          "range": null
+        },
+        "abstention_rate": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "C",
+      "family": "inventory",
+      "method": "hardened",
+      "ceiling": 500,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": null,
+          "range": null
+        },
+        "false_supported_rate": {
+          "median_target_mean": null,
+          "range": null
+        },
+        "abstention_rate": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "track": "C",
+      "family": "inventory",
+      "method": "hardened",
+      "ceiling": 1500,
+      "distinct_targets": 3,
+      "metrics": {
+        "trace_fidelity": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "output_fidelity": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "prediction_coverage": {
+          "median_target_mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ]
+        },
+        "conditional_accuracy": {
+          "median_target_mean": null,
+          "range": null
+        },
+        "false_supported_rate": {
+          "median_target_mean": null,
+          "range": null
+        },
+        "abstention_rate": {
+          "median_target_mean": 1.0,
+          "range": [
+            1.0,
+            1.0
+          ]
+        }
+      }
+    }
+  ],
+  "paired_target_differences": [
+    {
+      "track": "A",
+      "family": "delayed",
+      "ceiling": 250,
+      "method": "aalpy-state-prefix",
+      "baseline": "aalpy-random-w",
+      "metric": "trace_fidelity",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "delayed",
+      "ceiling": 250,
+      "method": "aalpy-state-prefix",
+      "baseline": "aalpy-random-w",
+      "metric": "prediction_coverage",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "delayed",
+      "ceiling": 250,
+      "method": "aalpy-state-prefix",
+      "baseline": "random",
+      "metric": "trace_fidelity",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "delayed",
+      "ceiling": 250,
+      "method": "aalpy-state-prefix",
+      "baseline": "random",
+      "metric": "prediction_coverage",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "delayed",
+      "ceiling": 1000,
+      "method": "aalpy-state-prefix",
+      "baseline": "aalpy-random-w",
+      "metric": "trace_fidelity",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        -0.16000000000000003,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "track": "A",
+      "family": "delayed",
+      "ceiling": 1000,
+      "method": "aalpy-state-prefix",
+      "baseline": "aalpy-random-w",
+      "metric": "prediction_coverage",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "delayed",
+      "ceiling": 1000,
+      "method": "aalpy-state-prefix",
+      "baseline": "random",
+      "metric": "trace_fidelity",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.15999999999999992
+      ],
+      "wins_ties_losses": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "delayed",
+      "ceiling": 1000,
+      "method": "aalpy-state-prefix",
+      "baseline": "random",
+      "metric": "prediction_coverage",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "easy",
+      "ceiling": 250,
+      "method": "aalpy-state-prefix",
+      "baseline": "aalpy-random-w",
+      "metric": "trace_fidelity",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "easy",
+      "ceiling": 250,
+      "method": "aalpy-state-prefix",
+      "baseline": "aalpy-random-w",
+      "metric": "prediction_coverage",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "easy",
+      "ceiling": 250,
+      "method": "aalpy-state-prefix",
+      "baseline": "random",
+      "metric": "trace_fidelity",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "easy",
+      "ceiling": 250,
+      "method": "aalpy-state-prefix",
+      "baseline": "random",
+      "metric": "prediction_coverage",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "easy",
+      "ceiling": 1000,
+      "method": "aalpy-state-prefix",
+      "baseline": "aalpy-random-w",
+      "metric": "trace_fidelity",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "easy",
+      "ceiling": 1000,
+      "method": "aalpy-state-prefix",
+      "baseline": "aalpy-random-w",
+      "metric": "prediction_coverage",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "easy",
+      "ceiling": 1000,
+      "method": "aalpy-state-prefix",
+      "baseline": "random",
+      "metric": "trace_fidelity",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "easy",
+      "ceiling": 1000,
+      "method": "aalpy-state-prefix",
+      "baseline": "random",
+      "metric": "prediction_coverage",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "medium",
+      "ceiling": 250,
+      "method": "aalpy-state-prefix",
+      "baseline": "aalpy-random-w",
+      "metric": "trace_fidelity",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "medium",
+      "ceiling": 250,
+      "method": "aalpy-state-prefix",
+      "baseline": "aalpy-random-w",
+      "metric": "prediction_coverage",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "medium",
+      "ceiling": 250,
+      "method": "aalpy-state-prefix",
+      "baseline": "random",
+      "metric": "trace_fidelity",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "medium",
+      "ceiling": 250,
+      "method": "aalpy-state-prefix",
+      "baseline": "random",
+      "metric": "prediction_coverage",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "medium",
+      "ceiling": 1000,
+      "method": "aalpy-state-prefix",
+      "baseline": "aalpy-random-w",
+      "metric": "trace_fidelity",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "medium",
+      "ceiling": 1000,
+      "method": "aalpy-state-prefix",
+      "baseline": "aalpy-random-w",
+      "metric": "prediction_coverage",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "medium",
+      "ceiling": 1000,
+      "method": "aalpy-state-prefix",
+      "baseline": "random",
+      "metric": "trace_fidelity",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "medium",
+      "ceiling": 1000,
+      "method": "aalpy-state-prefix",
+      "baseline": "random",
+      "metric": "prediction_coverage",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "rare",
+      "ceiling": 250,
+      "method": "aalpy-state-prefix",
+      "baseline": "aalpy-random-w",
+      "metric": "trace_fidelity",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "rare",
+      "ceiling": 250,
+      "method": "aalpy-state-prefix",
+      "baseline": "aalpy-random-w",
+      "metric": "prediction_coverage",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "rare",
+      "ceiling": 250,
+      "method": "aalpy-state-prefix",
+      "baseline": "random",
+      "metric": "trace_fidelity",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "rare",
+      "ceiling": 250,
+      "method": "aalpy-state-prefix",
+      "baseline": "random",
+      "metric": "prediction_coverage",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "rare",
+      "ceiling": 1000,
+      "method": "aalpy-state-prefix",
+      "baseline": "aalpy-random-w",
+      "metric": "trace_fidelity",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "rare",
+      "ceiling": 1000,
+      "method": "aalpy-state-prefix",
+      "baseline": "aalpy-random-w",
+      "metric": "prediction_coverage",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "rare",
+      "ceiling": 1000,
+      "method": "aalpy-state-prefix",
+      "baseline": "random",
+      "metric": "trace_fidelity",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "A",
+      "family": "rare",
+      "ceiling": 1000,
+      "method": "aalpy-state-prefix",
+      "baseline": "random",
+      "metric": "prediction_coverage",
+      "target_count": 3,
+      "median_difference": 0.0,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "track": "B",
+      "family": "wallet",
+      "ceiling": 1500,
+      "method": "hardened",
+      "baseline": "fixed-grid",
+      "metric": "trace_fidelity",
+      "target_count": 6,
+      "median_difference": 0.04571611253196928,
+      "range": [
+        0.025555555555555554,
+        0.12254901960784315
+      ],
+      "wins_ties_losses": [
+        6,
+        0,
+        0
+      ]
+    },
+    {
+      "track": "B",
+      "family": "wallet",
+      "ceiling": 1500,
+      "method": "hardened",
+      "baseline": "fixed-grid",
+      "metric": "prediction_coverage",
+      "target_count": 6,
+      "median_difference": 0.03890430799106098,
+      "range": [
+        -0.518590240123935,
+        0.26200204290091933
+      ],
+      "wins_ties_losses": [
+        4,
+        0,
+        2
+      ]
+    },
+    {
+      "track": "B",
+      "family": "wallet",
+      "ceiling": 1500,
+      "method": "hardened",
+      "baseline": "adaptive",
+      "metric": "trace_fidelity",
+      "target_count": 6,
+      "median_difference": -0.037355072463768096,
+      "range": [
+        -0.08288043478260865,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        1,
+        5
+      ]
+    },
+    {
+      "track": "B",
+      "family": "wallet",
+      "ceiling": 1500,
+      "method": "hardened",
+      "baseline": "adaptive",
+      "metric": "prediction_coverage",
+      "target_count": 6,
+      "median_difference": -0.030695674758877245,
+      "range": [
+        -0.11463981409759882,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        1,
+        5
+      ]
+    },
+    {
+      "track": "B",
+      "family": "wallet",
+      "ceiling": 3000,
+      "method": "hardened",
+      "baseline": "fixed-grid",
+      "metric": "trace_fidelity",
+      "target_count": 6,
+      "median_difference": 0.04571611253196928,
+      "range": [
+        0.025555555555555554,
+        0.12254901960784315
+      ],
+      "wins_ties_losses": [
+        6,
+        0,
+        0
+      ]
+    },
+    {
+      "track": "B",
+      "family": "wallet",
+      "ceiling": 3000,
+      "method": "hardened",
+      "baseline": "fixed-grid",
+      "metric": "prediction_coverage",
+      "target_count": 6,
+      "median_difference": 0.03890430799106098,
+      "range": [
+        -0.518590240123935,
+        0.26200204290091933
+      ],
+      "wins_ties_losses": [
+        4,
+        0,
+        2
+      ]
+    },
+    {
+      "track": "B",
+      "family": "wallet",
+      "ceiling": 3000,
+      "method": "hardened",
+      "baseline": "adaptive",
+      "metric": "trace_fidelity",
+      "target_count": 6,
+      "median_difference": -0.037355072463768096,
+      "range": [
+        -0.08288043478260865,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        1,
+        5
+      ]
+    },
+    {
+      "track": "B",
+      "family": "wallet",
+      "ceiling": 3000,
+      "method": "hardened",
+      "baseline": "adaptive",
+      "metric": "prediction_coverage",
+      "target_count": 6,
+      "median_difference": -0.030695674758877245,
+      "range": [
+        -0.11463981409759882,
+        0.0
+      ],
+      "wins_ties_losses": [
+        0,
+        1,
+        5
+      ]
+    }
+  ]
+}

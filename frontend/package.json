@@ -1,0 +1,20 @@
+{
+  "name": "blackbox-twin-workbench",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@11.25.0",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node test.mjs",
+    "format:check": "prettier --check src tests *.mjs index.html package.json"
+  },
+  "dependencies": {
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10",
+    "prettier": "3.6.2"
+  }
+}

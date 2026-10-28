@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "classification": "M3 functional paired smoke evaluation, not M6 benchmark",
+  "target": "examples/delayed/target.json",
+  "primary_metric": "exact full-trace agreement on identical frozen inputs",
+  "training_seed": 7,
+  "initial_random_w_walks_per_state": 1,
+  "initial_random_w_walk_length": 1,
+  "differential_strategy": "seeded-random",
+  "differential_candidates_per_iteration": 100,
+  "maximum_differential_length": 12,
+  "max_iterations": 2,
+  "original_training_action_budget": 6000,
+  "evaluation_seed": 20261027,
+  "evaluation_sequences": 100,
+  "minimum_evaluation_length": 16,
+  "maximum_evaluation_length": 24,
+  "evaluation_policy": "freeze before initial learning; do not supply inputs or outputs to refinement; fail on full-word overlap",
+  "interpretation": "single synthetic target and seed; no statistical superiority or equivalence claim"
+}

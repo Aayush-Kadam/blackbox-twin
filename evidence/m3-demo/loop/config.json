@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "target": {
+    "schema_version": 1,
+    "target_id": "delayed-commit",
+    "version": "1",
+    "executable": "../../fixtures/targets/delayed_process.py",
+    "authorization": "owned-local-fixture",
+    "reset": "protocol",
+    "actions": {
+      "advance": {
+        "operation": "advance",
+        "arguments": {}
+      },
+      "commit": {
+        "operation": "commit",
+        "arguments": {}
+      },
+      "idle": {
+        "operation": "idle",
+        "arguments": {}
+      }
+    }
+  },
+  "budget": {
+    "max_actions": 6000,
+    "max_resets": 2000,
+    "max_sequence_length": 100,
+    "query_timeout_seconds": 2.0,
+    "total_seconds": 300.0
+  },
+  "seed": 7,
+  "strategy": "random",
+  "max_iterations": 2,
+  "candidates": 100,
+  "max_length": 12,
+  "guided_depth": 5,
+  "initial_walks": 1,
+  "initial_walk_length": 1,
+  "refinement_walks": 10,
+  "minimize_actions": 1000,
+  "minimize_attempts": 200,
+  "loaded_initial_model": false
+}

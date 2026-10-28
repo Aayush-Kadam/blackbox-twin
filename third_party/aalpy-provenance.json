@@ -1,0 +1,7 @@
+{
+  "source": "https://github.com/DES-Lab/AALpy/blob/4c7b4a8746460fd84eaccb48d4891e5e0ac90883/LICENCE.txt",
+  "commit": "4c7b4a8746460fd84eaccb48d4891e5e0ac90883",
+  "sha256": "6a9059939bf76c15eb001afba9a953f1626dc8feb1e915c01a901691a23a0889",
+  "status": "UPSTREAM_PINNED_COMMIT_LICENSE",
+  "limit": "2.0.0 sdist omits license text. This is the pinned upstream branch license, not a license found in the sdist."
+}
