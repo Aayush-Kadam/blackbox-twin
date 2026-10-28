@@ -1,0 +1,6 @@
+# Preserve scientific evidence, frozen inputs and existing source bytes exactly.
+* -text
+
+# Frontend formatting/build output uses LF on every checkout, including Windows.
+frontend/** text eol=lf
+src/blackbox_twin/workbench_assets/** text eol=lf
