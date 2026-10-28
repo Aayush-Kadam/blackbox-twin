@@ -104,7 +104,16 @@ class ProcessOracle:
             self._close_after_failure(primary)
             raise primary from exc
         except (OSError, ValueError, OracleFailure) as exc:
-            crashed = isinstance(exc, OSError) and self.process.poll() is not None
+            # Windows can report a broken pipe before poll() observes process exit.
+            # A disconnected stdin is terminal even during that short status race.
+            crashed = isinstance(exc, BrokenPipeError)
+            if isinstance(exc, OSError) and not crashed:
+                # Some Windows pipe failures surface as OSError(EINVAL). Allow
+                # exit notification to settle without killing the child first.
+                if self.process.poll() is None:
+                    with suppress(subprocess.TimeoutExpired):
+                        self.process.wait(timeout=min(self.timeout, 0.1))
+                crashed = self.process.poll() is not None
             primary = OracleFailure(
                 "process_eof: broken subprocess pipe" if crashed else f"transport_failure: {exc}"
             )
@@ -134,6 +143,10 @@ class ProcessOracle:
             self.process.stdin.close()
         self.reader.join(timeout=2)
         self.process.stdout.close()
+        self._cleanup_temp()
+
+    def _cleanup_temp(self):
+        """Retry Windows sharing violations, including explicit cleanup after a failure."""
         for attempt in range(5):
             try:
                 self.temp.cleanup()

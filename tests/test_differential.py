@@ -80,7 +80,7 @@ for line in sys.stdin:
         )
     try:
         result = DifferentialRunner(*sessions).run(["a"])
-        assert result.status == status
+        assert result.status == status, result
         assert result.failure_side == side
         assert not result.is_mismatch
     finally:

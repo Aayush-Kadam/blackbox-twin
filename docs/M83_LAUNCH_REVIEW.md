@@ -49,6 +49,14 @@ repository/README/LICENSE/docs/commit/CI checks can only complete after public v
 
 ## Scientific and publication boundaries
 
+The first launch-documentation workflow (40738258478, e910b2d) passed Ubuntu Python
+and both frontends but exposed Windows process-lifecycle races: crash classification
+before exit status became visible, and test teardown encountering a process-directory
+sharing lock after an injected cleanup failure. The follow-up uses a bounded exit-status
+wait for pipe OSErrors and retains the same directory-sharing retry policy in teardown.
+Deterministic race tests were added; failure assertions and physical-link gates remain
+intact. The failed run remains preserved; a new full matrix is required for the fix.
+
 Negative M4/M6 findings, reduced typed coverage, unsupported inventory and lack of universal
 equivalence remain explicit. No new research campaign was run. The full research archive
 and original staged work remain local and preserved. No PyPI publication, hosting, Pages,
