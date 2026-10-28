@@ -1,5 +1,5 @@
 {
-  "status": "LOCAL REVIEW ONLY; public publication requires separate owner approval",
+  "status": "Curated source kit approved for M8.3 source launch, subject to final disclosure and CI gates; not the full research archive",
   "scope": "Curated data subset: M3 replay, M6 aggregate tables and one wallet policy. Not the full M6 campaign or its full integrity closure.",
   "files_sha256": {
     "evidence/m3-demo/evaluation/config.json": "db8e89c9eac965c5d41cc420e66fc6b7f38556153afbfeb1ec3081c0287c526f",

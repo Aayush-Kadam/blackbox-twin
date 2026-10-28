@@ -1,5 +1,9 @@
 # M8.2 private release validation
 
+Historical M8.2 authorization record. Later M8.3 authorization permits public source
+visibility after final gates; the restrictions below describe the earlier milestone.
+See [executed M8.2 results](M82_VALIDATION_RESULTS.md).
+
 2026-10-28. The owner explicitly approved Apache-2.0 for original contributions,
 Copyright 2026 Aayush Kadam, and confirmed authority and compatible third-party use.
 No conflicting original-source ownership claim or additional-permission exception was

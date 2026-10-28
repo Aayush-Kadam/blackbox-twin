@@ -1,6 +1,6 @@
 # Local review and reproduction
 
-Requirements: Python 3.11 or 3.12, Windows for the currently verified execution path,
+Requirements: Python 3.11 or 3.12, verified on Windows and Ubuntu,
 and trusted owned fixtures/data. Node is required only to rebuild the frontend; production
 assets are already bundled in the Python wheel. Python imports do not require Graphviz
 for the tested flows. Node/pnpm frontend tooling needs its pinned dependency registry or
@@ -42,7 +42,7 @@ is a hash-listed curated subset (~5.8 MB): M3 replay, M6 aggregates and one type
 policy. It is not the full M6 integrity closure. The clean test copies `reproduce_m8.py`
 beside the kit and installs only the wheel plus declared dependencies; the original source
 tree is not on its import path. Full historical audit remains a separate repository check.
-Do not distribute the review kit or wheel before licensing/attribution gates are closed.
+The owner approved Apache-2.0 in M8.2; preserve separate upstream notices with any copy.
 
 Python developer checks (install `.[dev,workbench,workbench-test]` first):
 
@@ -50,7 +50,6 @@ Python developer checks (install `.[dev,workbench,workbench-test]` first):
 python -m pytest -vv -o faulthandler_timeout=120
 python -m ruff check src tests fixtures scripts
 python -m ruff format --check src tests fixtures scripts
-python scripts/audit_m7.py --project . --m6-only
 ```
 
 Frontend source workflow, from `frontend/`:
@@ -66,11 +65,16 @@ M8.1 verified an empty frontend/store installation using pnpm 11.25.0 and the un
 lockfile. The local pnpm-workspace.yaml selects hoisted packages, copied imports and a
 project-local store, so the install does not need pnpm's external project-registration
 symlink. No system policy changed. Tests/build/format and installed-backend browser
-communication passed. CI configuration prepares Windows/Linux Python 3.11/3.12 and
-frontend checks on both OSes, but has not run remotely. Physical link tests are required
+communication passed. M8.2 executed Windows/Ubuntu Python 3.11/3.12 and
+frontend checks on both OSes: all six jobs passed on a6c8a1053fab3441586795b733b707a616e4f5b5.
+See [executed results](M82_VALIDATION_RESULTS.md). Physical link tests are required
 in CI (BBT_REQUIRE_PHYSICAL_LINKS=1); unavailable creation fails rather than quietly skips.
-Linux commands/behavior remain NOT VERIFIED. macOS and Python 3.13+ are not in the
-M8 verified compatibility claim despite the package's lower-bound metadata.
+All seven physical-link cases passed with zero skips in every Python matrix job.
+macOS and Python 3.13+ are outside the verified compatibility claim despite the
+package's lower-bound metadata. On Ubuntu, use .venv/bin/python in place of
+.venv/Scripts/python.exe throughout the examples above. The full M6 audit command
+requires the separately preserved research archive; the curated source kit alone
+does not contain that closure inventory.
 
 The benchmark uses frozen held-out inputs, separate training/evaluation query accounting
 and preserved failures; consult `M6_BENCHMARK_PROTOCOL.md`, `M6_RESULTS.md`,

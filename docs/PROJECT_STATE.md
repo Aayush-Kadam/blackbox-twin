@@ -1,5 +1,21 @@
 # Continuation state — 2026-10-28
 
+## Current checkpoint — M8.3 source launch preparation
+
+The owner conditionally authorized public source availability for the exact repository
+Aayush-Kadam/blackbox-twin after history, disclosure and final CI checks. The six-job
+M8.2 matrix passed on a6c8a1053fab3441586795b733b707a616e4f5b5; see
+[executed results](M82_VALIDATION_RESULTS.md). README, current notices and the developer
+guide now distinguish closed engineering gates from scientific limitations.
+
+The GitHub connector does not support changing repository visibility. The repository
+remains private until the owner completes GitHub Settings after final validation.
+No public availability is claimed by this checkpoint. PyPI, hosting, releases, tags,
+DOIs, datasets and collaborator changes remain outside authorization.
+
+All sections below are historical checkpoints. Their original verdicts are preserved
+and superseded only where the current results explicitly close a gate.
+
 ## M8.2 authorization and private validation checkpoint
 
 Owner selected Apache-2.0 and confirmed licensing authority for original contributions,
