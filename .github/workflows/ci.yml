@@ -7,8 +7,6 @@ jobs:
     timeout-minutes: 20
     env:
       BBT_REQUIRE_PHYSICAL_LINKS: "1"
-      TEMP: ${{ runner.temp }}
-      TMP: ${{ runner.temp }}
     strategy:
       fail-fast: false
       matrix:
@@ -26,6 +24,9 @@ jobs:
       - run: python -m ruff check src tests fixtures scripts
       - run: python -m ruff format --check src tests fixtures scripts
       - run: python -m pytest -vv --basetemp=work/ci-tests --durations=10 -o faulthandler_timeout=120
+        env:
+          TEMP: ${{ runner.temp }}
+          TMP: ${{ runner.temp }}
       - run: python -m pip wheel --no-deps . --wheel-dir wheelhouse
       - run: python scripts/ci_package_smoke.py
   frontend:
