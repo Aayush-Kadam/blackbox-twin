@@ -100,6 +100,9 @@ this distribution. Their dated verdicts remain intact; current
 
 ## Verification and development
 
+The planned M0–M8.2 engineering and verification milestones are complete within the
+declared limitations. Earlier milestone reports retain their original dated verdicts.
+
 [M8.2 hosted validation](https://github.com/Aayush-Kadam/blackbox-twin/actions/runs/40700717049)
 on `a6c8a1053fab3441586795b733b707a616e4f5b5` passed all six jobs:
 

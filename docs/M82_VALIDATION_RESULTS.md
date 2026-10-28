@@ -124,4 +124,3 @@ The private source candidate points readers to Actions for revision-specific sta
 The technical gates defined for this bounded research candidate have passed. Public
 publication, visibility changes, release creation and hosting still require separate
 explicit owner approval; none occurred.
-
