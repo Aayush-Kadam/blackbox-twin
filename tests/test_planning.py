@@ -222,7 +222,7 @@ def test_planner_integrates_with_real_m3_refinement(tmp_path):
         max_iterations=1,
         refinement_walks=2,
     )
-    assert result["resolved_counterexamples"] == 1
+    assert result["resolved_counterexamples"] == 1, result
     assert result["revisions"][1]["states"] > result["revisions"][0]["states"]
     assert result["iterations"][0]["regressions"]["new_regressions"] == 0
     assert (tmp_path / "loop/revisions/001/twin.py").exists()
